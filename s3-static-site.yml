@@ -54,7 +54,7 @@ Resources:
           HostName: !Ref S3Bucket
 Outputs:  
   S3BucketName:
-    Value: !Sub ${R53DomainName}
+    Value: !Sub ${BucketName}
     Description: Name for bucket on S3    
   S3WebsiteURL:
     Value: !GetAtt [S3Bucket, WebsiteURL]
